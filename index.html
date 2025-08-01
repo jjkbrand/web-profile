@@ -1,28 +1,94 @@
-<html>
-    <head>
-        <title>learning Web dev</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackbranded.id</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-gray-200 p-4">
 
-    <body style="background-color: #ffffff; color: #000000;">
-
-        <h1>🌐 JACKBRANDED.ID</h1>
-
+    <!-- Main Profile Container -->
+    <main class="w-full max-w-md mx-auto bg-gray-800 rounded-3xl shadow-2xl p-8 transform transition-all duration-300 hover:scale-105">
         
-        <p>Selamat datang! Temukan produk terbaik kami di marketplace favorit Anda. Klik tautan di bawah ini untuk langsung menuju toko resmi kami:</p>
-        
-        <h2>🛒 Toko Kami</h2>
+        <!-- Profile Header Section -->
+        <header class="flex flex-col items-center mb-8">
+            <!-- Profile Image -->
+            <img src="https://placehold.co/150x150/4a5568/a0aec0?text=CB" 
+                 alt="Profile Picture" 
+                 class="w-36 h-36 rounded-full border-4 border-purple-500 shadow-lg mb-4 object-cover transition-transform duration-300 hover:rotate-3">
+            
+            <!-- Brand & Owner Name -->
+            <h1 class="text-3xl font-bold text-white tracking-wide">Jackbranded</h1>
+            <p class="text-lg font-semibold text-purple-400 mt-1">@Jackbranded.id</p>
+        </header>
 
-        <li>
-            <a href="https://www.tokopedia.com/jackbrandedsupply">Kunjungi Tokopedia kami</a>
-        </li>
-        <li>
-            <a href="https://shopee.co.id/jackbranded.id">Kunjungi Shoope kami</a>
-        </li> 
-        
-        <h2>👕 Gambar Produk Unggulan</h2>
+        <!-- Bio & Introduction Section -->
+        <section class="text-center mb-8">
+            <p class="text-gray-300 leading-relaxed">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque exercitationem deleniti aperiam laboriosam libero? Laborum explicabo sint dolorum, et molestias harum consectetur ab quam cum ipsam nesciunt blanditiis sed! Ea?
+            </p>
+        </section>
 
-        <!-- <img src="https://camo.githubusercontent.com/ffa6bf932fc442b76abf910afedeb30079820900b9298fe705c3264d0d4ac110/68747470733a2f2f696d616765732e746f6b6f70656469612e6e65742f696d672f63616368652f3530302d7371756172652f567162636d4d2f323032352f352f32342f36373932383865322d663930342d343239612d613464392d6563653735333731313239612e706e672e77656270" alt="Jacket Billabong" style="height: 200px;"> -->
+        <!-- Social Links & Marketplace Buttons -->
+        <section class="space-y-4">
+            <!-- Example: Link to a Marketplace -->
+            <a href="https://www.etsy.com/shop/chloesboutique" target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5V13h2v4.5zm0-6V6.5h2V11z"/>
+                </svg>
+                Shop Our Latest Collection
+            </a>
 
-        
-    </body>
+            <!-- Example: Instagram Link -->
+            <a href="https://www.instagram.com/chloesboutique" target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <!-- Instagram SVG Icon (simplified) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.646.069 4.85s-.011 3.583-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.646.069-4.85.069s-3.583-.011-4.85-.069c-3.251-.148-4.77-1.691-4.919-4.919-.058-1.266-.069-1.646-.069-4.85s.011-3.583.069-4.85c.149-3.227 1.664-4.771 4.919-4.919 1.266-.058 1.646-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.444.647-1.444 1.444s.647 1.444 1.444 1.444 1.444-.647 1.444-1.444-.647-1.444-1.444-1.444z"/>
+                </svg>
+                Follow us on Instagram
+            </a>
+
+            <!-- Example: Pinterest Link -->
+            <a href="https://www.pinterest.com/chloesboutique" target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <!-- Pinterest SVG Icon (simplified) -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1.096 15.698c-.147-.078-.294-.156-.441-.234-.588-.312-1.176-.625-1.764-.937-.588-.312-.99-.54-.99-.958 0-.25.078-.546.234-.842.156-.296.384-.53.68-.704.305-.175.642-.262 1.011-.262 1.042 0 1.947.53 2.71 1.59s1.144 2.502 1.144 4.098c0 1.25-.262 2.383-.787 3.399-.525 1.016-1.25 1.79-2.174 2.322-.924.533-2.02.8-3.288.8-1.572 0-2.906-.395-4.004-1.185-1.098-.79-1.842-1.842-2.23-3.156-.388-1.314-.388-2.698 0-4.152.388-1.454 1.098-2.587 2.13-3.4.156-.125.32-.218.492-.281.334-.13.782-.258 1.344-.388.562-.13 1.218-.218 1.968-.262 1.042-.062 1.884.093 2.527.468.643.375.98 1.016 1.011 1.921l-.014.281c-.014.375-.078.694-.19.958-.112.264-.281.48-.506.647-.225.166-.46.262-.704.281-.468.031-.884-.13-1.248-.48-.364-.35-.618-.842-.764-1.472-.146-.63-.223-1.282-.234-1.956 0-.312.031-.593.093-.842.062-.25.156-.47.281-.66.125-.19.296-.34.512-.45.215-.11.45-.166.704-.166.25 0 .484.047.68.14.195.093.35.218.46.375.11.156.19.344.234.562.046.218.062.46.046.72-.015.26-.062.53-.14.812-.078.28-.19.58-.33.89-.14.31-.32.65-.54.99-.22.34-.48.65-.77.92-.29.27-.61.5-1.01.69-.4.19-.85.29-1.35.29-.46 0-.906-.078-1.332-.234-.426-.156-.81-.358-1.152-.606-.342-.248-.617-.54-.824-.875-.207-.335-.306-.694-.3-.958.01-.264.093-.527.248-.79.155-.264.384-.506.68-.725.296-.218.66-.358 1.092-.42.433-.062.77-.078 1.011-.046.241.03.484.093.73.19.245.093.45.203.61.328.16.125.29.281.39.468.1.187.16.4.18.63.02.23.03.48.01.75-.01.27-.06.55-.16.84-.1.29-.24.58-.45.86-.21.28-.48.56-.8.83-.32.27-.68.51-1.09.71-.41.2-.87.3-1.38.3-.46 0-.89-.06-1.28-.17-.39-.11-.74-.29-1.05-.53-.31-.24-.55-.5-.73-.78-.18-.28-.27-.58-.27-.88 0-.312.08-.593.24-.842.16-.25.39-.46.69-.64.3-.18.66-.28 1.09-.31 1.06-.07 2.05.28 2.97 1.06.918.78 1.545 1.83 1.884 3.156.339 1.326.339 2.709 0 4.152-.339 1.442-1.05 2.587-2.13 3.4-.125.11-.27.203-.43.281z"/>
+                </svg>
+                Find us on Pinterest
+            </a>
+            
+            <!-- Example: Personal Website/Blog Link -->
+            <a href="https://www.chloesboutique.com" target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-6 rounded-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                <!-- Globe SVG Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5.053L8 18l3-7 3 7 3-7 2.947 7H21m-10 4c0 1.657-1.343 3-3 3s-3-1.343-3-3m6 0a3 3 0 11-6 0m6 0h2m-6 0v2"/>
+                </svg>
+                Our Official Website
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center text-gray-500">
+        <p>&copy; 2024 Jackbranded's Brand. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
